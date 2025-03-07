@@ -12,6 +12,7 @@ namespace BabyCareProject.Services.InstructorServices
         private readonly IMongoCollection<Instructor> _instructorCollection;
         private readonly IMapper _mapper;
 
+
         public InstructorService(IDatabaseSettings databaseSettings,IMapper mapper)
         {
             _mapper = mapper;
