@@ -1,5 +1,6 @@
 using BabyCareProject.DataAccess.Settings;
 using BabyCareProject.Services.InstructorServices;
+using BabyCareProject.Services.ProductServices;
 using Microsoft.Extensions.Options;
 using System.Reflection;
 
@@ -16,6 +17,7 @@ builder.Services.AddSingleton<IDatabaseSettings>(sp =>
 });
 
 builder.Services.AddScoped<IInstructorService, InstructorService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddControllersWithViews();
 
